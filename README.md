@@ -1,4 +1,4 @@
-# NBA-Play-By_Play-Kaggle
+# NBA-Play-By-Play-Kaggle
 This repository contains code to wrangle the data found in the 'NBA Play-by-Play Data 2015-2021' dataset found on Kaggle.
 
 # Correction to data
