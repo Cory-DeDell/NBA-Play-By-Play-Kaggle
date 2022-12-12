@@ -74,4 +74,4 @@ for game in games:
             print(player)
 
 # save updated data frame with corrected jump ball players to a csv file
-# df.to_csv('your_df.csv', index=False)
+df.to_csv('your_df.csv', index=False)
