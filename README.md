@@ -1,7 +1,7 @@
 # NBA-Play-By-Play-Kaggle
 This repository contains code to wrangle the data found in the 'NBA Play-by-Play Data 2015-2021' dataset found on Kaggle.
 
-# Correction to data
+# Correction to kaggle data
 During my initial review of the play-by-play data, I noticed that players listed under 'JumpballAwayPlayer' and 'JumpballHomePlayer'
 were the correct players involved in the jump ball but some were incorrectly labeled as away player when they were the home player
 and vice versa. NBA_Data_Jump_Ball_Player_Correction.py corrects this issue by collecting all of the home and away players involved
