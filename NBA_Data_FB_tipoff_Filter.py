@@ -192,7 +192,7 @@ if not first_baskets_only:
     first_baskets_tipoff_df['TallerPlayerWonJump'] = first_baskets_tipoff_df.apply(lambda row : apply_taller_player_won_tip(row['JumpballAwayPlayer Height(in)'],
                           row['JumpballHomePlayer Height(in)'], row['JumpballTeamPoss(Home or Away)']), axis = 1)
     
-    first_baskets_tipoff_df['LighterPlayerWonJump'] = first_baskets_tipoff_df.apply(lambda row : apply_lighter_player_won_tip(row['JumpballAwayPlayer Weight(lb)'],
+    first_baskets_tipoff_df['HeavyOrLightWonJump'] = first_baskets_tipoff_df.apply(lambda row : apply_lighter_player_won_tip(row['JumpballAwayPlayer Weight(lb)'],
                           row['JumpballHomePlayer Weight(lb)'], row['JumpballTeamPoss(Home or Away)']), axis = 1)
     
     first_baskets_tipoff_df['JumpPlayerGotFirstBasket'] = first_baskets_tipoff_df.apply(lambda row : jump_ball_player_got_first_basket(row['JumpballAwayPlayer'],
