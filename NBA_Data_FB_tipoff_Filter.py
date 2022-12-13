@@ -186,6 +186,9 @@ first_baskets_tipoff_df = get_first_basket_and_tipoff_df(df, first_baskets_only)
 # add foul shot to shot type column for first baskets made via foul shot
 first_baskets_tipoff_df.loc[first_baskets_tipoff_df['FreeThrowShooter'].notnull(), 'ShotType'] = 'Foul shot'
 
+# add time elapsed when first basket was made
+first_baskets_tipoff_df['FirstBasketTimeElapsed'] = 720 - first_baskets_tipoff_df['SecLeft']
+
 # if building a dataframe with tipoff data, add in feature columns
 if not first_baskets_only:
     
