@@ -43,7 +43,7 @@ def get_first_basket_and_tipoff_df(df, first_baskets_only, remove_unknown_jumps=
     
     # remove unnecessary columns or columns that contain no data
     first_basket_drop_cols = [col for col in first_basket_df.columns if first_basket_df[col].isnull().all()]
-    first_basket_drop_cols.extend(['Quarter','WinningTeam', 'ShotOutcome', 'FreeThrowOutcome'])
+    first_basket_drop_cols.extend(['Quarter', 'ShotOutcome', 'FreeThrowOutcome'])
     first_basket_df.drop(columns=first_basket_drop_cols, inplace=True)
     
     # if you want the dataframe to only include the first basket plays
@@ -185,6 +185,9 @@ first_baskets_tipoff_df = get_first_basket_and_tipoff_df(df, first_baskets_only)
 
 # add foul shot to shot type column for first baskets made via foul shot
 first_baskets_tipoff_df.loc[first_baskets_tipoff_df['FreeThrowShooter'].notnull(), 'ShotType'] = 'Foul shot'
+
+# add indicator for team that got first basket also won the game
+first_baskets_tipoff_df['FirstBasketTeamWonGame'] = first_baskets_tipoff_df['WinningTeam'] == first_baskets_tipoff_df['FB_Team']
 
 # add time elapsed when first basket was made
 first_baskets_tipoff_df['FirstBasketTimeElapsed'] = 720 - first_baskets_tipoff_df['SecLeft']
