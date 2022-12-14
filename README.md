@@ -11,3 +11,6 @@ in a given game and reassigning the jump ball players to the correct column.
 NBA_Data_FB_tipoff_Filter.py takes the play-by-play data and returns a dataframe that contains all of the first basket plays along with
 the tipoff play info (in a single row for a given game). You can also choose to get a dataframe that inlcudes only the first basket plays
 without the tipoff info.
+
+# First basket data exploration
+NBA_First_Basket_Analysis.ipynb performs some basket data exploration tasks and creates some visualizations of the data
