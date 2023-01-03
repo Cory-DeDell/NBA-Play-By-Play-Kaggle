@@ -10,7 +10,7 @@ import numpy as np
 df = pd.read_csv('your_df.csv', low_memory=False)
 
 # indicate whether or not your want the dataframe to include first basket data only
-# if false, datrame will also include tipoff info for available games
+# if false, dataframe will also include tipoff info for available games
 first_baskets_only = False
 
 def get_first_basket_and_tipoff_df(df, first_baskets_only, remove_unknown_jumps=True):
