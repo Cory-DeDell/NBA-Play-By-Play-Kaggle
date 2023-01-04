@@ -8,9 +8,9 @@ and vice versa. NBA_Data_Jump_Ball_Player_Correction.py corrects this issue by c
 in a given game and reassigning the jump ball players to the correct home/away column.
 
 # First basket and tipoff filter
-NBA_Data_FB_tipoff_Filter.py takes the play-by-play data and returns a dataframe that contains all of the first basket plays along with
-the tipoff play info (in a single row for a given game). You can also choose to get a dataframe that inlcudes only the first basket plays
-without the tipoff info.
+NBA_Data_FB_tipoff_Filter.py takes the raw play-by-play data and returns a dataframe that contains all of the first basket plays along with
+the tipoff play info (merged into a single row for a given game). You can also choose to return a dataframe that inlcudes only the first basket plays
+without tipoff data.
 
 # First basket data exploration
 NBA_First_Basket_Analysis.ipynb performs some data exploration tasks and creates visualizations of the data
