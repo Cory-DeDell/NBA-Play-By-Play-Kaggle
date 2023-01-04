@@ -1,5 +1,5 @@
 # NBA-Play-By-Play-Kaggle
-This repository contains code to wrangle the data in the 'NBA Play-by-Play Data 2015-2021' dataset on Kaggle.
+This repository contains code to wrangle and analyze first basket data from the 'NBA Play-by-Play Data 2015-2021' dataset on Kaggle.
 
 # Correction to kaggle data
 During my initial review of the play-by-play data, I noticed that players listed under 'JumpballAwayPlayer' and 'JumpballHomePlayer'
