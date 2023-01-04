@@ -13,4 +13,4 @@ the tipoff play info (merged into a single row for a given game). You can also c
 without tipoff data.
 
 # First basket data exploration
-NBA_First_Basket_Analysis.ipynb performs some data exploration tasks and creates visualizations of the data
+NBA_First_Basket_Analysis.ipynb performs some data exploration tasks and creates useful visualizations of the data
