@@ -12,5 +12,5 @@ NBA_Data_FB_tipoff_Filter.py takes the raw play-by-play data and returns a data 
 the tipoff play info (merged into a single row for a given game). You can also choose to return a data frame that inlcudes only the first basket plays
 without tipoff data.
 
-# First basket data exploration
-NBA_First_Basket_Analysis.ipynb performs some data exploration tasks and creates some useful visualizations of the data.
+# First basket data exploration notebook
+NBA_First_Basket_Analysis.ipynb performs some data exploration tasks and creates some useful visualizations of the data. The table of contents links in the notebook will not work when viewing it on GitHub. [Follow this link to Jupyter notebook viewer that enables the links.](https://nbviewer.org/github/Cory-DeDell/NBA-Play-By-Play-Kaggle/blob/main/NBA_First_Basket_Analysis.ipynb)
